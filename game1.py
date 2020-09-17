@@ -10,13 +10,12 @@ Use this file to write an "open" version of the game (no test code or defined fo
 "I'm sorry, you are out of guesses."
 
 '''
-import random
-
+import random  
 x = int(input("Guess a number from 1 to 20: "))
 y = random.randint(0, 20)
 
 if x == y:
-        print("Congratulations, ", x, " was the right answer")
+    print("Congratulations, ", x, " was the right answer")
 if x != y: 
     if x > y:
         print("Your guess of ", x, " was too high")
