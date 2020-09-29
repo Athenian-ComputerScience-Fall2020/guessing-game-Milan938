@@ -10,9 +10,12 @@ Use this file to write an "open" version of the game (no test code or defined fo
 "I'm sorry, you are out of guesses."
 
 '''
-import random  
-x = int(input("Guess a number from 1 to 20: "))
-y = random.randint(0, 20)
+import random
+first_num = int(input("Enter the lowest number: "))
+second_num = int(input("Enter the second number: "))
+
+x = int(input("Guess a number from ", first_num, " to ", second_num))
+y = random.randint(first_num, second_num)
 
 if x == y:
     print("Congratulations, ", x, " was the right answer")
