@@ -34,32 +34,48 @@ while True:
             except:
                 print("Please enter an integer")
         if a !=  y:
-            b = int(input("Try again: "))
-            if b == y:
-                print("Congratulations, ", b, "was the right answer")
-            if b > y:
-                print("Your guess of ", b, " was too high")
-            if b < y:
-                print("Your guess of ", b, " was too small")
-
+            b = input("Try again, or press q to quit: ")
+            if a == "q":
+                break
+            try:
+                b = int(b)
+                if b == y:
+                    print("Congratulations, ", b, "was the right answer")
+                if b > y:
+                    print("Your guess of ", b, " was too high")
+                if b < y:
+                    print("Your guess of ", b, " was too small")
+            except:
+                print("Please enter an integer: ")
         if b !=  y:
-            c = int(input("Try again: "))
-            if c == y:
-                print("Congratulations, ", c, "was the right answer")
-            if c > y:
-                print("Your guess of ", c, " was too high")
-            if c < y:
-                print("Your guess of ", c, " was too small")
+            c = input("Try again, or press q to quit: ")
+            if c == "q":
+                break
+            try:
+                c = int(a)
+                if a == y:
+                    print("Congratulations, ", a, "was the right answer")
+                elif c > y:
+                    print("Your guess of ", a, " was too high")
+                elif c < y:
+                    print("Your guess of ", a, " was too small")
+            except:
+                print("Please enter an integer")
 
         if c !=  y:
-            d = int(input("Try again: "))
-            if d == y:
-                print("Congratulations, ", d, "was the right answer")
-            if d > y:
-                print("Your guess of ", d, " was too high")
-            if d < y:
-                print("Your guess of ", d, " was too small")
-
+            d = input("Try again, or press q to quit: ")
+            if d == "q":
+                break
+            try:
+                d = int(a)
+                if d == y:
+                    print("Congratulations, ", a, "was the right answer")
+                elif d > y:
+                    print("Your guess of ", a, " was too high")
+                elif d < y:
+                    print("Your guess of ", a, " was too small")
+            except:
+                print("Please enter an integer")
         if d != y:
             print("Sorry, you're out of guesses")
             break
