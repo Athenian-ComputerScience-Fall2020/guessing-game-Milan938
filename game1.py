@@ -4,7 +4,7 @@ import random
 while True:
 
     first_num = int(input("Enter the lowest number: "))
-    second_num = int(input("Enter the second number: "))
+    second_num = int(input("Enter the highest number: "))
 
     print("Guess a number from ", first_num, " to ", second_num)
     x = int(input())
@@ -52,13 +52,13 @@ while True:
             if c == "q":
                 break
             try:
-                c = int(a)
-                if a == y:
-                    print("Congratulations, ", a, "was the right answer")
+                c = int(c)
+                if c == y:
+                    print("Congratulations, ", c, "was the right answer")
                 elif c > y:
-                    print("Your guess of ", a, " was too high")
+                    print("Your guess of ", c, " was too high")
                 elif c < y:
-                    print("Your guess of ", a, " was too small")
+                    print("Your guess of ", c, " was too small")
             except:
                 print("Please enter an integer")
 
@@ -67,13 +67,13 @@ while True:
             if d == "q":
                 break
             try:
-                d = int(a)
+                d = int(d)
                 if d == y:
-                    print("Congratulations, ", a, "was the right answer")
+                    print("Congratulations, ", d, "was the right answer")
                 elif d > y:
-                    print("Your guess of ", a, " was too high")
+                    print("Your guess of ", d, " was too high")
                 elif d < y:
-                    print("Your guess of ", a, " was too small")
+                    print("Your guess of ", d, " was too small")
             except:
                 print("Please enter an integer")
         if d != y:
