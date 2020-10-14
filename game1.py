@@ -20,7 +20,8 @@ while True:
                 print("Your guess of ", x, " was too small")
 
         if x !=  y:
-            a = input("Try again, or press q to quit: ")
+            print("Try again, or press q to quit: ")
+            a = input()
             if a == "q":
                 break
             try:
@@ -34,8 +35,9 @@ while True:
             except:
                 print("Please enter an integer")
         if a !=  y:
-            b = input("Try again, or press q to quit: ")
-            if a == "q":
+            print("Try again, or press q to quit: ")
+            b = input()
+            if b == "q":
                 break
             try:
                 b = int(b)
@@ -48,7 +50,8 @@ while True:
             except:
                 print("Please enter an integer: ")
         if b !=  y:
-            c = input("Try again, or press q to quit: ")
+            print("Try again, or press q to quit: ")
+            c = input()
             if c == "q":
                 break
             try:
@@ -63,7 +66,8 @@ while True:
                 print("Please enter an integer")
 
         if c !=  y:
-            d = input("Try again, or press q to quit: ")
+            print("Try again, or press q to quit: ")
+            d = input()
             if d == "q":
                 break
             try:
