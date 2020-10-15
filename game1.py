@@ -13,6 +13,7 @@ while True:
     while True:
         if x == y:
             print("Congratulations, ", x, " was the right answer")
+            break
         if x != y: 
             if x > y:
                 print("Your guess of ", x, " was too high")
@@ -28,6 +29,7 @@ while True:
                     a = int(a)
                     if a == y:
                         print("Congratulations, ", a, "was the right answer")
+                        break
                     elif a > y:
                         print("Your guess of ", a, " was too high")
                     elif a < y:
@@ -43,6 +45,7 @@ while True:
                         b = int(b)
                         if b == y:
                             print("Congratulations, ", b, "was the right answer")
+                            break
                         elif b > y:
                             print("Your guess of ", b, " was too high")
                         elif b < y:
@@ -58,6 +61,7 @@ while True:
                             c = int(c)
                             if c == y:
                                 print("Congratulations, ", c, "was the right answer")
+                                break
                             elif c > y:
                                 print("Your guess of ", c, " was too high")
                             elif c < y:
@@ -74,6 +78,7 @@ while True:
                                 d = int(d)
                                 if d == y:
                                     print("Congratulations, ", d, "was the right answer")
+                                    break
                                 elif d > y:
                                     print("Your guess of ", d, " was too high")
                                 elif d < y:
